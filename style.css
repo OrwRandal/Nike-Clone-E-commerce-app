@@ -1,91 +1,96 @@
-*{
+* {
     margin: 0;
 }
-body{
+
+body {
     font-family: arial;
 }
-#class1{
+
+#class1 {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     background-color: #f5f5f5;
-    height:35px;
+    height: 35px;
     padding: 0 3% 0 2%;
 }
 
-.logos{
-    display:flex;
+.logos {
+    display: flex;
     align-items: center;
 }
 
-#nike{
-    display:flex;
+#nike {
+    display: flex;
     align-items: center;
-    padding-left:5%;
+    padding-left: 5%;
 }
 
-.logos img:hover, #nike:hover{
+.logos img:hover,
+#nike:hover {
     opacity: .5;
-    cursor:pointer;
-}
-
-.logos img{
-    padding-left:1%;
-}
-
-.nav:hover{
-    color:#909090;
     cursor: pointer;
 }
 
-#class2{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height:60px;
+.logos img {
+    padding-left: 1%;
 }
-#firstList{
-    display:flex;
+
+.nav:hover {
+    color: #909090;
+    cursor: pointer;
+}
+
+#class2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 60px;
+}
+
+#firstList {
+    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-#secondList{
-    display:flex;
+
+#secondList {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#firstList li{
+#firstList li {
     padding: 0 5px;
     font-size: small;
 }
 
-#secondList li{
+#secondList li {
     padding: 0 12px;
     font-size: medium;
 }
 
-ul{
-    display:flex;
+ul {
+    display: flex;
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
-#formSec{
-    display:flex;
+#formSec {
+    display: flex;
     justify-content: flex-end;
-    align-items:center;
+    align-items: center;
     margin-right: 5%
 }
 
-#formSec img{
+#formSec img {
     padding-right: 4%;
 }
 
-#formSec form{
+#formSec form {
     margin-right: 3%;
 }
 
-#searchBar{
-    height:38px;
+#searchBar {
+    height: 38px;
     background-color: #f5f5f5;
     border-width: 0;
     border-radius: 60px;
@@ -93,48 +98,88 @@ ul{
     width: 175px;
     display: flex;
     justify-content: flex-end;
-    align-items:center;
-    margin-right:5%;
+    align-items: center;
+    margin-right: 5%;
 }
 
-#searchBar input::placeholder{
-    color:lightgray;
-    font-size:medium;
+#searchBar input::placeholder {
+    color: lightgray;
+    font-size: medium;
 }
 
-#box{
-    background-color:transparent;
+#box {
+    background-color: transparent;
     border-style: none;
-    width:75%;
+    width: 75%;
     padding-left: 15px;
 }
 
-#searchButton{
-    width:18px;
+#searchButton {
+    width: 18px;
     height: auto;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
-#searchBar input:focus{
+#searchBar input:focus {
     outline: none;
 }
 
-#searchBar form{
-    display:flex;
+#searchBar form {
+    display: flex;
 }
 
-#searchBar:hover{
+#searchBar:hover {
     background-color: #e2e2e2;
 }
-#class3{
+
+#class3 {
     background-color: #f5f5f5;
     height: 60px;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content:space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#sub{
+
+#sub {
     font-size: small;
     text-decoration: underline;
 }
+
+#bannerHolder {
+    display: flex;
+    justify-content: center;
+}
+
+#banner1 {
+    background-image: linear-gradient(to bottom right, pink, red, pink);
+    width: 90%;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner1 h1 {
+    font-size: 4em;
+    padding-bottom: 15px;
+    /*font-family: 'antonregular';*/
+    /*text-shadow: black 5px 5px;*/
+}
+#shopButton{
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px 12px;
+    transition-duration: .3s;
+    margin-top: 25px;
+}
+#shopButton:hover{
+    cursor: pointer;
+    padding: 6px 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+
